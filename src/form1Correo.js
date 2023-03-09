@@ -3,16 +3,7 @@ import React, { useState, useEffect } from 'react';
 export function CorreoIni() {
     const [email, setEmail] = useState('');
     const [emailValido, setEmailValido] = useState(false);
-    const [inputClass, setInputClass] = useState('');
 
-    useEffect(() => {
-        if (!emailValido) {
-            setInputClass({ border: '2px solid red' });
-
-        } else {
-            setInputClass('');
-        }
-    }, [emailValido]);
 
     function valideForm(event) {
         const form = event.target;
@@ -30,28 +21,32 @@ export function CorreoIni() {
         setEmailValido(event.target.checkValidity());
     }
 
-    return ( <
-        form onSubmit = { valideForm }
+    return ( < form onSubmit = { valideForm }
         action = "pp.html" >
         <
-        div class = { `input-group mb-3 ${inputClass}` } >
+        div class = "form-floating mb-3" >
         <
-        span class = "input-group-text"
-        id = "basic-addon1" >
-        Email <
-        /span> <
-        input class = "form-control"
+        input className = { `form-control ${emailValido ? 'border border-2 border-success' : 'border border-2 border-danger'}` }
         type = "email"
         name = "email"
         id = "email"
-        placeholder = "tuemail@gmail.com"
         value = { email }
         onChange = { handleChange }
-        required /
-        >
+        placeholder = "tuemail@gmail.com"
+        required / >
         <
-        span > { emailValido ? '✔' : 'Este campo es obligatorio' } < /span> < /
-        div > <
-        /form>
+        label
+        for = "email"
+        class = "text-secondary" > Direccion de correo < /label> <
+        span className = { `${emailValido ? '' : 'text-danger'}` } > { emailValido ? '' : 'Este campo es obligatorio' } < /span>< /
+        div >
+        <
+        div class = "pp" >
+        <
+        button type = "submit"
+        class = "bntEnviar" >
+        Empezar < i class = "fa fa-angle-right" > < /i> < /button > < /
+        div > < /
+        form >
     );
 }
