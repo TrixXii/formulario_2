@@ -1,10 +1,6 @@
 form {
     width: 30%;
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: left;
 }
 
@@ -21,5 +17,24 @@ form {
 }
 
 .FormHeader {
-    background-color: rgba(0, 0, 0, 0.272);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./imag/findo.jpg');
+}
+
+.logo {
+    width: 20%;
+    margin-top: 80px;
+}
+
+.parrafo {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.email {
+    border-radius: 3px;
 }
