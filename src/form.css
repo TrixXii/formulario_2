@@ -26,13 +26,21 @@ form {
 
 .logo {
     width: 20%;
-    margin-top: 80px;
 }
 
-.parrafo {
+.parrafo,
+.parrafo2 {
     color: white;
     text-align: center;
     font-size: 17px;
+}
+
+.parrafo2 {
+    text-align: left;
+}
+
+.parrafo2 h3 {
+    font-size: 23px;
 }
 
 .email {
