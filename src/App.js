@@ -6,9 +6,9 @@ import { CorreoIni } from './form1Correo'
 
 function App() {
     return ( <
-        div className = "App" >
+        div className = "FormHeader App" >
         <
-        header className = "FormHeader" > <
+        header > <
         img class = "logo"
         src = { logo }
         /> <

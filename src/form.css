@@ -1,15 +1,22 @@
 form {
-    width: 30%;
     margin: auto;
     text-align: left;
 }
 
-.bntEnviar {
+.bntEnviar,
+.bntEnviar2 {
     border-radius: 1px;
     border: 0px;
     background-color: rgb(233, 5, 5);
     color: rgb(255, 255, 255);
     padding: 8px 32px;
+}
+
+.bntEnviar2 {
+    border-radius: 4px;
+    padding: 16px 48px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .pp {
@@ -36,6 +43,7 @@ form {
 }
 
 .parrafo2 {
+    color: black;
     text-align: left;
 }
 
@@ -46,3 +54,56 @@ form {
 .email {
     border-radius: 3px;
 }
+
+.fondo,
+.fondo2,
+.fondo3 {
+    margin: auto;
+    width: 35%;
+    padding: 18px;
+}
+
+.fondo3 {
+    width: 70%;
+}
+
+.fondo2,
+.fondo3 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(159, 159, 159);
+}
+
+.mida {
+    width: 450px;
+}
+
+.seleccion {
+    background-color: #ff9b9b;
+    /* Fondo rojo claro */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-out;
+}
+
+.flecha::after {
+    content: '';
+    position: absolute;
+    top: 54px;
+    display: none;
+    right: 45%;
+    transform: translateY(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #e30000 transparent transparent;
+}
+
+.cont {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* background-color: #e30000; */
