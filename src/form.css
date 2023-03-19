@@ -88,6 +88,14 @@ form {
     transition: background-color 0.3s ease-out;
 }
 
+.seleccion.active {
+    background-color: #e30000;
+}
+
+.flecha.active::after {
+    display: block;
+}
+
 .flecha::after {
     content: '';
     position: absolute;
@@ -100,10 +108,16 @@ form {
     border-color: #e30000 transparent transparent;
 }
 
+.colorSelect.active {
+    color: #e30000;
+}
+
 .cont {
     position: relative;
+    cursor: pointer;
     overflow: hidden;
 }
 
-
-/* background-color: #e30000; */
+.text-start {
+    text-align: start;
+}
