@@ -4,10 +4,6 @@ import visa from './imag/visa.jpg';
 import amex from './imag/amex.jpg';
 import traseraCard from './imag/traseraCard.png';
 
-
-
-
-
 export function CorreoIni() {
     const [email, setEmail] = useState('');
     const [emailValido, setEmailValido] = useState(false);
